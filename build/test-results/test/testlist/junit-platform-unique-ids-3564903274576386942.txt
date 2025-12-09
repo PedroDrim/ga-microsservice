@@ -1,0 +1,1 @@
+[engine:junit-jupiter]/[class:com.example.GeneticAlgorithmDocker.GeneticAlgorithmDockerApplicationTests]/[method:contextLoads()]

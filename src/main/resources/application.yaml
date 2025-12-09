@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: GaMicrosserviceBackend
+
+server:
+  # Configuração do Undertow
+  undertow:
+    threads:
+      worker: 64
+      io: 4
+    direct-buffers: false  # ← ESSENCIAL para evitar OutOfMemory em produção
+    buffer-size: 8192
+
+  # Configurações gerais do servidor
+  port: 8080
+  compression:
+    enabled: true
+    mime-types: text/html,text/xml,text/plain,text/css,text/javascript,application/javascript,application/json
+    min-response-size: 1024
